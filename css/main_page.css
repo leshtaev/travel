@@ -40,4 +40,25 @@ header .container {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
+header span {
+  padding-right: 15px;
+}
+
+header span + span {
+  padding-left: 10px;
+}
+
+header span:last-child {
+  padding-right: 0;
+}
+
+header .nav-link {
+  color: #fefefe;
+  text-decoration: none;
+}
+
+header .nav-link + .nav-link {
+  margin-left: 25px;
+}
 /*# sourceMappingURL=main_page.css.map */
