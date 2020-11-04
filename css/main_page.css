@@ -4,11 +4,12 @@
 }
 
 body {
+  background-color: #ffffff;
   margin: 0;
 }
 
 .container {
-  max-width: 1600px;
+  max-width: 1110px;
   margin: 0 auto;
 }
 
@@ -21,5 +22,22 @@ body {
 .grid-container {
   display: -ms-grid;
   display: grid;
+}
+
+header {
+  height: 35px;
+  background-color: #24282e;
+  padding-top: 3px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #fefefe;
+}
+
+header .container {
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=main_page.css.map */
