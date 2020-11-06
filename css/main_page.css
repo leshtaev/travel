@@ -101,6 +101,7 @@ header .nav-link + .nav-link {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 100px;
+  cursor: pointer;
 }
 
 .hero .hero-switcher:hover {
