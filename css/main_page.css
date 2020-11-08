@@ -62,8 +62,105 @@ header .nav-link + .nav-link {
   margin-left: 25px;
 }
 
+.logo-and-nav {
+  height: 90px;
+  background-color: #ffffff;
+}
+
+.hero {
+  height: 650px;
+  background-color: #e9f0fd;
+  background: no-repeat top/100% url(../images/hero.jpg);
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+
+.hero .container {
+  height: 104px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  top: 40%;
+  right: 0;
+  left: 0;
+}
+
+.hero input {
+  display: none;
+}
+
+.hero .hero-switcher {
+  width: 104px;
+  background-color: #24282ea8;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 100px;
+  cursor: pointer;
+}
+
+.hero .hero-switcher:hover {
+  background-color: #32a8d6;
+}
+
+.hero .hero-slogan {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+}
+
+.hero h1 {
+  font-size: 60px;
+  font-weight: 900;
+  margin: 0;
+}
+
+.hero h2 {
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.hero .action {
+  padding-top: 10px;
+}
+
+.hero a {
+  margin: 8px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14;
+  font-weight: bold;
+  border: solid;
+  border-radius: 5px;
+  padding: 10px;
+  width: 150px;
+  text-align: center;
+}
+
+.hero a:hover {
+  background-color: #32a8d6;
+}
+
+.accent {
+  color: #32a8d6;
+}
+
 .logo-and-nav .container {
-  height: 91px;
+  height: 90px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -76,7 +173,7 @@ header .nav-link + .nav-link {
 .logo-and-nav nav {
   width: 721px;
   height: 20px;
-  font-family: OpenSans;
+  font-family: "Open Sans", sans-serif;
   font-size: small;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
