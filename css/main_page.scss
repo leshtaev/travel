@@ -1,3 +1,68 @@
 @import 'common';
 @import 'header';
+@import 'variables';
 @import 'hero';
+
+.logo-and-nav{
+    .container {
+       
+        height:90px;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        
+
+        align-items: center;   
+    }
+
+    nav {
+       
+        width: 721px;
+        height: 20px;
+        font-family: $secondary-font-family;
+        font-size: small;
+        justify-content: flex-end;
+       
+        
+        position: relative;
+
+
+        
+    }
+    .logo{
+        width: 70px;
+        height: 30px;
+        font-size: 25px;
+        align-items: center;
+        justify-content: center;
+        .span_l{
+            margin-left: 1px;
+
+
+        }
+        .span_l.color{
+            color: #66a6d3
+
+        }
+
+
+
+
+    }
+
+    .nav-link {
+        color: #393939;
+        text-transform: uppercase;
+        text-decoration: none;
+        position: relative;
+        &:hover {
+            color:  #66a6d3;;
+        }
+         
+
+    }
+    .nav-link + .nav-link {
+        margin-left: 45px;
+    }
+
+}
+
