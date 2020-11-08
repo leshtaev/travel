@@ -1,10 +1,11 @@
 @import 'common';
 @import 'header';
+@import 'variables';
 
 .logo-and-nav{
     .container {
        
-        height:91px;
+        height:90px;
         justify-content: space-between;
         padding-bottom: 20px;
         
@@ -16,7 +17,7 @@
        
         width: 721px;
         height: 20px;
-        font-family: OpenSans;
+        font-family: $secondary-font-family;
         font-size: small;
         justify-content: flex-end;
        
