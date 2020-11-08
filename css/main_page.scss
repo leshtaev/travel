@@ -63,3 +63,61 @@
     }
 
 }
+
+
+
+
+.about {
+    .features {
+        justify-content: space-between;
+
+        p {
+            font-size: 14px;
+            line-height: 1.71;
+            width: 270px;
+            margin: 0;
+        }
+    }
+
+    .feature:hover {
+        .icon-container {
+            background-color: $accent-color;
+            border-color: $accent-color;
+        }
+
+        i {
+            color: white;
+        }
+
+        h3 {
+            color: $accent-color;
+        }
+    }
+
+    .icon-container {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: solid 2px #c4c4c4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+
+        i {
+            font-size: 48px;
+            color: #c4c4c4
+        }
+    }
+
+    h3 {
+        font-size: 18px;
+        font-weight: bold;
+        color: #393939;
+        margin-top: 34px;
+        margin-bottom: 20px;
+        font-family: $secondary-font-family;
+        height: 15px;
+        line-height: 15px;
+    }
+}
