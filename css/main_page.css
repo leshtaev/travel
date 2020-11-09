@@ -220,7 +220,7 @@ header .nav-link + .nav-link {
   height: 600px;
 }
 
-.about div.container {
+.about .container {
   text-align: center;
 }
 
