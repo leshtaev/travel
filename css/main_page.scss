@@ -1,10 +1,12 @@
 @import 'common';
 @import 'header';
+@import 'variables';
+@import 'hero';
 
 .logo-and-nav{
     .container {
        
-        height:91px;
+        height:90px;
         justify-content: space-between;
         padding-bottom: 20px;
         
@@ -16,7 +18,7 @@
        
         width: 721px;
         height: 20px;
-        font-family: OpenSans;
+        font-family: $secondary-font-family;
         font-size: small;
         justify-content: flex-end;
        
@@ -67,57 +69,71 @@
 
 
 
-.about {
-    .features {
+.about{
+    height: 600px;
+    div.container{
+        text-align: center;
+    }
+    .features{
         justify-content: space-between;
+        margin-top: 50px;
+        font-family: $secondary-font-family;
 
-        p {
-            font-size: 14px;
-            line-height: 1.71;
-            width: 270px;
-            margin: 0;
-        }
+            
     }
-
-    .feature:hover {
-        .icon-container {
-            background-color: $accent-color;
-            border-color: $accent-color;
-        }
-
-        i {
-            color: white;
-        }
-
-        h3 {
-            color: $accent-color;
-        }
+    .block{
+        height: 5px;
+        width: 100px;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        margin-top: -20px;
+        background-color:  #66a6d3;
     }
+    .title{
+            height: 44px ;
+            justify-content: center;
+            align-items: center;
+            font-size: 44px;
+            text-transform: uppercase;
+            font-family: $main-font-family;
+            .color{
+                color:  #66a6d3;
+            }
+         }
+    .feature{
+        height: 280px;
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        opacity: 0.71;
+        border: solid 0.5px #000000;
+        box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.3);
+        &:hover {
+            i {
+            color: #66a6d3;
+            }
 
+            h3 {
+            color: #66a6d3;
+            }
+        }
+       
+    }
     .icon-container {
-        width: 120px;
-        height: 120px;
-        border-radius: 50%;
-        border: solid 2px #c4c4c4;
+        width: 40px;
+        height: 40px;
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 0 auto;
-
         i {
             font-size: 48px;
             color: #c4c4c4
         }
-    }
-
-    h3 {
-        font-size: 18px;
-        font-weight: bold;
-        color: #393939;
-        margin-top: 34px;
-        margin-bottom: 20px;
-        font-family: $secondary-font-family;
-        height: 15px;
-        line-height: 15px;
-    }
+    }   
 }
