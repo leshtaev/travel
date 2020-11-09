@@ -65,10 +65,6 @@
     }
 
 }
-
-
-
-
 .about{
     height: 600px;
     div.container{
@@ -76,10 +72,8 @@
     }
     .features{
         justify-content: space-between;
-        margin-top: 50px;
-        font-family: $secondary-font-family;
-
-            
+        margin-top: 100px;
+        font-family: $secondary-font-family;      
     }
     .block{
         height: 5px;
@@ -90,8 +84,8 @@
         left: 0;
         right: 0;
         text-align: center;
-        margin-top: -20px;
-        background-color:  #66a6d3;
+        margin-top: -25px;
+        background-color:  $accent-color_second;
     }
     .title{
             height: 44px ;
@@ -101,7 +95,7 @@
             text-transform: uppercase;
             font-family: $main-font-family;
             .color{
-                color:  #66a6d3;
+                color:  $accent-color_second;
             }
          }
     .feature{
@@ -112,17 +106,20 @@
         justify-content: center;
         opacity: 0.71;
         border: solid 0.5px #000000;
-        box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.3);
-        &:hover {
+        box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.3);    
+        &:hover{
             i {
-            color: #66a6d3;
+            color: $accent-color_second;
+            
             }
-
             h3 {
-            color: #66a6d3;
+            color: $accent-color_second;
             }
         }
        
+    }
+    .feature:hover{
+        border-color: $accent-color_second;
     }
     .icon-container {
         width: 40px;

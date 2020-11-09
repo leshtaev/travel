@@ -228,7 +228,7 @@ header .nav-link + .nav-link {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 50px;
+  margin-top: 100px;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -241,7 +241,7 @@ header .nav-link + .nav-link {
   left: 0;
   right: 0;
   text-align: center;
-  margin-top: -20px;
+  margin-top: -25px;
   background-color: #66a6d3;
 }
 
@@ -287,6 +287,10 @@ header .nav-link + .nav-link {
 
 .about .feature:hover h3 {
   color: #66a6d3;
+}
+
+.about .feature:hover {
+  border-color: #66a6d3;
 }
 
 .about .icon-container {
