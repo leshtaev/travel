@@ -62,11 +62,6 @@ header .nav-link + .nav-link {
   margin-left: 25px;
 }
 
-.logo-and-nav {
-  height: 90px;
-  background-color: #ffffff;
-}
-
 .hero {
   height: 650px;
   background-color: #e9f0fd;
@@ -159,32 +154,35 @@ header .nav-link + .nav-link {
   color: #32a8d6;
 }
 
-.logo-and-nav .container {
+.logo-and-nav {
   height: 90px;
+}
+
+.logo-and-nav .container {
+  height: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: "Open Sans", sans-serif;
 }
 
 .logo-and-nav nav {
   width: 721px;
   height: 20px;
-  font-family: "Open Sans", sans-serif;
-  font-size: small;
+  font-size: 14px;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  position: relative;
+  font-weight: 900;
 }
 
 .logo-and-nav .logo {
   width: 70px;
   height: 30px;
-  font-size: 25px;
+  font-size: 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -198,18 +196,18 @@ header .nav-link + .nav-link {
 }
 
 .logo-and-nav .logo .span_l.color {
-  color: #66a6d3;
+  color: #32a8d6;
+  font-weight: 900;
 }
 
 .logo-and-nav .nav-link {
   color: #393939;
   text-transform: uppercase;
   text-decoration: none;
-  position: relative;
 }
 
 .logo-and-nav .nav-link:hover {
-  color: #66a6d3;
+  color: #32a8d6;
 }
 
 .logo-and-nav .nav-link + .nav-link {
@@ -221,7 +219,14 @@ header .nav-link + .nav-link {
 }
 
 .about .container {
+  height: 100%;
   text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .about .features {
@@ -242,7 +247,7 @@ header .nav-link + .nav-link {
   right: 0;
   text-align: center;
   margin-top: -25px;
-  background-color: #66a6d3;
+  background-color: #32a8d6;
 }
 
 .about .title {
@@ -259,7 +264,7 @@ header .nav-link + .nav-link {
 }
 
 .about .title .color {
-  color: #66a6d3;
+  color: #32a8d6;
 }
 
 .about .feature {
@@ -275,6 +280,7 @@ header .nav-link + .nav-link {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 40px 20px;
   opacity: 0.71;
   border: solid 0.5px #000000;
   -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.3);
@@ -282,15 +288,15 @@ header .nav-link + .nav-link {
 }
 
 .about .feature:hover i {
-  color: #66a6d3;
+  color: #32a8d6;
 }
 
 .about .feature:hover h3 {
-  color: #66a6d3;
+  color: #32a8d6;
 }
 
 .about .feature:hover {
-  border-color: #66a6d3;
+  border-color: #32a8d6;
 }
 
 .about .icon-container {

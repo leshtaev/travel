@@ -1,9 +1,5 @@
 @import 'variables';
 
-.logo-and-nav {
-    height: 90px;
-    background-color: $main-background-color;
-}
 
 .hero {
     height: 650px;
@@ -38,7 +34,7 @@
             background-color: $accent-color;
         }
     }
-    
+
     .hero-slogan {
         flex-direction: column;
         justify-content: center;
