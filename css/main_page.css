@@ -24,6 +24,39 @@ body {
   display: grid;
 }
 
+.heading {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 60px;
+  margin-top: 100px;
+}
+
+.title {
+  margin: 0;
+  height: 44px;
+  font-size: 44px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.title .color {
+  color: #32a8d6;
+}
+
+.block {
+  height: 5px;
+  width: 100px;
+  background-color: #32a8d6;
+}
+
 header {
   height: 35px;
   background-color: #24282e;
@@ -226,37 +259,9 @@ header .nav-link + .nav-link {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.about .heading {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 60px;
-  margin-top: 100px;
-}
-
-.about .title {
-  height: 44px;
-  font-size: 44px;
-  text-transform: uppercase;
-}
-
-.about .title .color {
-  color: #32a8d6;
-}
-
-.about .block {
-  height: 5px;
-  width: 100px;
-  background-color: #32a8d6;
 }
 
 .about .features {
@@ -285,7 +290,7 @@ header .nav-link + .nav-link {
           align-items: center;
   padding: 40px 20px;
   opacity: 0.71;
-  border: solid 1px #000000;
+  border: solid 1px #222222;
 }
 
 .about .feature:hover {
@@ -323,5 +328,10 @@ header .nav-link + .nav-link {
   margin-bottom: 0;
   max-height: 62px;
   overflow: auto;
+}
+
+.routes {
+  height: 600px;
+  background-color: lightskyblue;
 }
 /*# sourceMappingURL=main_page.css.map */

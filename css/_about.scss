@@ -1,43 +1,21 @@
-.about{
-    height: 600px;
+@import 'variables';
 
+
+.about {
+    height: 600px;
+    
     .container {
         height: 100%;
-        text-align: center;
+        font-family: $main-font-family;
+        padding: 0;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     .features {
         justify-content: space-between;
-        margin-top: 100px;
-        font-family: $secondary-font-family;      
-    }
-
-    .block {
-        height: 5px;
-        width: 100px;
-        position: absolute;
-        margin-left: auto;
-        margin-right: auto;
-        left: 0;
-        right: 0;
-        text-align: center;
-        margin-top: -25px;
-        background-color:  $accent-color;
-    }
-
-    .title{
-        height: 44px ;
-        justify-content: center;
-        align-items: center;
-        font-size: 44px;
-        text-transform: uppercase;
-        font-family: $main-font-family;
-        
-        .color{
-            color:  $accent-color;
-        }
+        margin-bottom: 100px;
+        height: 280px;
     }
 
     .feature{
@@ -46,11 +24,14 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         padding: 40px 20px;
         opacity: 0.71;
-        border: solid 1px #000000;
+        border: solid 1px $heading-color;
         
-        &:hover{            
+        &:hover{    
+            border-color: $accent-color;
+
             i {
             color: $accent-color;            
             }
@@ -60,22 +41,23 @@
             }
         }   
     }
-
-    .feature:hover{
-        border-color: $accent-color;
-    }
     
     .icon-container {
-        width: 40px;
-        height: 40px;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 0 auto;
+        margin-bottom: 15px;
 
         i {
             font-size: 48px;
             color: #c4c4c4
         }
-    }   
+    }
+
+    p {
+        margin-top: 10px;
+        margin-bottom: 0;;
+        max-height: 62px;
+        overflow: auto;
+    }
 }
