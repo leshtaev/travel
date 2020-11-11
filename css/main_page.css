@@ -24,6 +24,27 @@ body {
   display: grid;
 }
 
+.action {
+  padding-top: 10px;
+}
+
+.action a {
+  margin: 8px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14;
+  font-weight: bold;
+  border: solid;
+  border-radius: 5px;
+  padding: 10px;
+  width: 150px;
+  text-align: center;
+}
+
+.action a:hover {
+  background-color: #32a8d6;
+}
+
 .heading {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -52,7 +73,7 @@ body {
 
 .block {
   height: 5px;
-  width: 100px;
+  width: 150px;
   background-color: #32a8d6;
 }
 
@@ -159,27 +180,6 @@ header .nav-link + .nav-link {
   font-size: 24px;
   font-weight: 300;
   margin: 0;
-}
-
-.hero .action {
-  padding-top: 10px;
-}
-
-.hero a {
-  margin: 8px;
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 14;
-  font-weight: bold;
-  border: solid;
-  border-radius: 5px;
-  padding: 10px;
-  width: 150px;
-  text-align: center;
-}
-
-.hero a:hover {
-  background-color: #32a8d6;
 }
 
 .accent {
@@ -351,6 +351,83 @@ header .nav-link + .nav-link {
 }
 
 .routes .heading .title {
+  color: #ffffff;
+}
+
+.routes .routes-container {
+  height: 380px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.routes .route {
+  height: 100%;
+  width: 350px;
+  background-color: #ffffff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.routes img {
+  height: 277px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  position: relative;
+  top: 0;
+}
+
+.routes .route-info {
+  height: 103px;
+  width: 100%;
+  padding: 16px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.routes .route-name {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 16px;
+  color: #444444;
+  text-align: left;
+}
+
+.routes .route-desc .action {
+  height: 55px;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #32a8d6;
+  border-color: #32a8d6;
+}
+
+.routes .route-desc .action a {
+  color: #32a8d6;
+  border-color: #32a8d6;
+}
+
+.routes .route-desc .action a:hover {
   color: #ffffff;
 }
 /*# sourceMappingURL=main_page.css.map */
