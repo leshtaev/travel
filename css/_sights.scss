@@ -49,10 +49,6 @@
             object-fit: cover;
             object-position: center;
         }
-        
-       
-        
-     
         .case-item {
             background-color: #bdbebd;
             text-decoration: none;
@@ -74,12 +70,9 @@
         right: 0;
         transition: all .25s ease-in-out;
         border: 10px solid rgba(0, 0, 0, .6);
-      
-        
         width: 140px;
         height: 140px;
     }
-
     .case-inner-content {
         height: 100%;
         font-family: $secondary-font-family;
