@@ -44,7 +44,6 @@ body {
   height: 44px;
   font-size: 44px;
   text-transform: uppercase;
-  color: #222222;
 }
 
 .title .color {
@@ -98,7 +97,7 @@ header .nav-link + .nav-link {
 .hero {
   height: 650px;
   background-color: #e9f0fd;
-  background: no-repeat top/100% url(../images/hero.jpg);
+  background: no-repeat center/100% url(../images/hero.jpg);
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
@@ -262,6 +261,7 @@ header .nav-link + .nav-link {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  color: #222222;
 }
 
 .about .features {
@@ -290,7 +290,7 @@ header .nav-link + .nav-link {
           align-items: center;
   padding: 40px 20px;
   opacity: 0.71;
-  border: solid 1px #222222;
+  border: solid 1px;
 }
 
 .about .feature:hover {
@@ -331,7 +331,26 @@ header .nav-link + .nav-link {
 }
 
 .routes {
-  height: 600px;
-  background-color: lightskyblue;
+  height: 700px;
+  background: no-repeat bottom/100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0.75))), url(../images/routes_background.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../images/routes_background.jpg);
+}
+
+.routes .container {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.routes .heading .title {
+  color: #ffffff;
 }
 /*# sourceMappingURL=main_page.css.map */
