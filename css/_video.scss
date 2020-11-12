@@ -1,0 +1,15 @@
+@import 'variables';
+
+
+.video {
+    height: 550px;
+    background: no-repeat center/100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../images/video.jpg);
+    justify-content: center;
+    align-items: center;
+
+    i {
+        font-size: 180px;
+        color: $main-background-color;
+    }
+}
