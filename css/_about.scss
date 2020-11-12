@@ -10,6 +10,7 @@
         padding: 0;
         flex-direction: column;
         justify-content: space-between;
+        color: $heading-color;
     }
 
     .features {
@@ -27,7 +28,7 @@
         align-items: center;
         padding: 40px 20px;
         opacity: 0.71;
-        border: solid 1px $heading-color;
+        border: solid 1px;
         
         &:hover{    
             border-color: $accent-color;
