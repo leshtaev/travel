@@ -1,0 +1,17 @@
+@import 'variables';
+@import 'common';
+
+.blog{
+    height: 1700px;
+
+    .container {
+        height: 100%;
+        font-family: $main-font-family;
+        padding: 0;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
+
+}
