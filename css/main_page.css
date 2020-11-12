@@ -414,9 +414,11 @@ header .nav-link + .nav-link {
 
 .sights .sights-container .case-item:hover .case-inner {
   opacity: 1;
+  cursor: pointer;
 }
 
 .sights .sights-container .case-inner {
+  margin: auto auto;
   opacity: 0;
   position: absolute;
   top: 0;
