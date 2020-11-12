@@ -8,8 +8,17 @@
     justify-content: center;
     align-items: center;
 
+    input {
+        display: none;
+    }
+
     i {
         font-size: 180px;
         color: $main-background-color;
+    }
+
+    i:hover {
+        color: $accent-color;
+        cursor: pointer;
     }
 }

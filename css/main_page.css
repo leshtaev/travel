@@ -444,9 +444,18 @@ header .nav-link + .nav-link {
           align-items: center;
 }
 
+.video input {
+  display: none;
+}
+
 .video i {
   font-size: 180px;
   color: #ffffff;
+}
+
+.video i:hover {
+  color: #32a8d6;
+  cursor: pointer;
 }
 
 .sights {
