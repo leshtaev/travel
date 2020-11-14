@@ -1,5 +1,5 @@
 @import 'variables';
-@import 'common';
+
 
 .blog{
     height: 700px;
@@ -11,22 +11,26 @@
         flex-direction: column;
         justify-content: space-between;
     }
-    .blog-container{
+
+    .blog-container {
         margin-bottom: 55px;
         justify-content: space-between;
         height: 440px;
 
-        .blog-post{
+        .blog-post {
             height: 380px;
             width: 350px;
             flex-direction: column;
+
             a { 
                 text-decoration: none;
-                img{
+
+                img {
                     width: 350px;
                     height: 230px;
                 }
-                .title{
+
+                .title {
                     font-size: 18px;
                     height: 44px;
                     font-family: $secondary-font-family;
@@ -37,13 +41,15 @@
                     color: #555252;
     
                 }
+
                 .block_line {
                     height: 3px;
                     width: 130px;
                     background-color: $accent-color;
                     margin: 4.5px 121.5px 7.5px 0.5px;
                 }
-                .text{
+
+                .text {
                     height: 50px;
                     margin: 8px 22px 0 0.5px;
                     font-size: 14px;
@@ -52,17 +58,7 @@
                     text-align: left;
                     color: #555252;
                 }
-
-
-
-
             } 
-            
         }
-
-
     }
-
-
-
 }
