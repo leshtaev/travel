@@ -36,7 +36,9 @@
             margin: 60px 9px 60px 7px;
             border-radius: 3px;
             font-family: $secondary-font-family;
-            border: solid 1px #939393;
+            font-weight: 600;
+            color: $content-color;
+            border: solid 1px $content-color;
             text-align: center;
             padding: 4px;
             text-transform: uppercase;
