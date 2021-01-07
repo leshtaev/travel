@@ -662,7 +662,7 @@ footer .container {
   padding-top: 64px;
   padding-bottom: 60px;
   gap: 20px 32px;
-      grid-template-areas: "heading1 heading2" "content1 content2" "content1 social-links";
+      grid-template-areas: "heading1 heading2" "content1 content2" "content1 social-links";
   -ms-grid-rows: 35px 1fr 44px;
       grid-template-rows: 35px 1fr 44px;
   -ms-grid-columns: 1fr 1fr;
