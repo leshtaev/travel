@@ -21,7 +21,8 @@
     .routes-container {
         height: 380px;
         justify-content: space-between;
-        margin-bottom: 100px;
+        padding-bottom: 100px;
+        box-sizing: content-box;
     }
 
     .route {
