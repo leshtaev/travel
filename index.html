@@ -147,28 +147,58 @@
     </script>
 
     <script>
-        
+        // при открытии формы
+        function fillProfile() {
+            // при открытии окна, берём данные из localStorage.getItem('MyData')
+            // заполняем этими данными форму
+        }
+
+        const categories = {
+            museums: 'Museums'
+        }
+
+        function getPlaces() {
+            // наполнить данные
+            const data = [
+                {
+                    name: 'Эрмитаж',
+                    image: 'photo.png',
+                    categories: ['sightsins', categories.museums],
+                    coordinates: [50, 60],
+                    price: 100
+                }
+            ]
+        }
+
+        function selectPlaces(userData) {
+            // профильтровать по категориям [].filter()
+            // заканчивается, когда заканчивается бюджет
+            // возвращаем 
+        }
 
         const addUser = (ev) => {
             ev.preventDefault();
-            let pers_data={
-                id: Date.now(),
-                name: document.getElementById('fname').value,
-                city: document.getElementById('city').value,
-                age: document.getElementById('age').value,
-                places: document.getElementById('places').value,
-                budget: document.getElementById('number').value
+            const rowData = Array.from(new FormData(document.getElementById('profile')))
+            const data = {}
 
-            }
-            
-            document.forms[0].reset();
+            rowData.forEach((item) => {
+                const key = item[0]
+                const value = item[1]
 
+                if (key === 'places') {
+                    if (data[key] == null) {
+                        data[key] = [value]
+                    } else {
+                        data[key].push(value)
+                    }
+                } else {
+                    data[key] = item[1]
+                }
+            })
 
-            console.warn('added' , pers_data );
-            console.log(Array.from(new FormData(document.getElementById('profile'))))
+            console.warn('added', data)
          
-            localStorage.setItem('MyData', JSON.stringify(pers_data) );
-            
+            localStorage.setItem('MyData', JSON.stringify(data))
         }
         
         document.addEventListener('DOMContentLoaded', () => { 
