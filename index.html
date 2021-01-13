@@ -71,9 +71,10 @@
                 </h1>
                 <h2>city tours</h2>
                 <div class="action flex-container">
-                    <a href="">start travel</a>
-                    <a href="">read more</a>                
+                    <a href="#" id='action'>start travel</a>
+                    <a href="#">read more</a>                
                 </div>
+                
             </div>
             <label>
                 <input type="button" value="">
@@ -82,8 +83,101 @@
                 </div>
             </label>
         </div>
+        <div class='popup'>
+            <form id='profile'>
+                <div class="popup-content">
+                    <img src="./images/close_icon.png" alt="" class="close">
+                    <p3>
+                    Get personal city tour now!
+                    </p3>
+                    <div class='direction'>
+                        <label for="fname">First name:</label>
+                        <input type="text" id="fname" name="fname">
+                    </div>
+                    <div class="direction">
+                        <label for="city">City:</label>
+                        <select name="city" id="city">
+                            <option value="moscow">Moscow</option>
+                        </select>
+                    </div>
+                    <div class="direction">
+                        <label for="age">Age:</label>
+                        <select name="age" id="age">
+                            <option value="18-25">18-25</option>
+                            <option value="25-35">25-35</option>
+                            <option value="35-45">35-45</option>
+                            <option value="45-60">45-60</option>
+                            <option value="60-100">60-100</option>
+                        </select>
+                    </div>
+                    <div class="direction">
+                        <label for="places">Places of interests:</label>
+                        <select name="places" id="places" multiple>
+                            <option value="Museums">Museums</option>
+                            <option value="Bars">Bars</option>
+                            <option value="Restaraunts">Restaraunts</option>
+                            <option value="Parks">Parks</option>
+                            <option value="Theartes">Theartes</option>
+                            <option value="Night clubs">Night clubs</option>
+                        </select>
+                    </div>
+                    <div class="direction">
+                        <label for="budget">budget:</label>
+                        <input type="number" id="number" name="number">
+                    </div>
+                    <div >
+                        <button id='btn'>Get Trip</button>
+                    </div>
+                    <div id="msg">
+                        <pre></pre>
+                    </div>
+                </div>
+            </form>
+        </div>
     </section>
+    <script>
+        document.getElementById('action').addEventListener("click",function() {
+            document.querySelector(".popup").style.display = "flex";
+        })
+        console.log(document.querySelector('.close'))
+        document.querySelector('.close').addEventListener("click",function(){
+            document.querySelector(".popup").style.display="none";
 
+        })
+    </script>
+
+    <script>
+        
+
+        const addUser = (ev) => {
+            ev.preventDefault();
+            let pers_data={
+                id: Date.now(),
+                name: document.getElementById('fname').value,
+                city: document.getElementById('city').value,
+                age: document.getElementById('age').value,
+                places: document.getElementById('places').value,
+                budget: document.getElementById('number').value
+
+            }
+            
+            document.forms[0].reset();
+
+
+            console.warn('added' , pers_data );
+            console.log(Array.from(new FormData(document.getElementById('profile'))))
+         
+            localStorage.setItem('MyData', JSON.stringify(pers_data) );
+            
+        }
+        
+        document.addEventListener('DOMContentLoaded', () => { 
+            document.getElementById('btn').addEventListener('click', addUser);
+        });
+       
+
+    </script>
+    
     <section class="about">
         <div class="container flex-container">
             <div class="heading flex-container">
@@ -380,24 +474,5 @@
             <span class="accent">Shah Zobayer Ahmed</span>
         </div>
     </div>
-    
-    <button class="open-button" onclick="openForm()">Подпишитесь</button>
-
-    <div class="form-popup" id="myForm">
-  <form action="#" class="form-container">
-    <h1>Подписаться</h1>
-
-    <label for="name"><b>Имя</b></label>
-    <input type="text" placeholder="Ваше имя" name="name" required>
-  
-  <label for="email"><b>Е-мейл</b></label>
-    <input type="text" placeholder="Ваш е-мейл" name="email" required>
-
-    <button type="submit" class="btn">Отправить</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
-  </form>
-    </div>
 </body>
 </html>
-
-<div>
