@@ -140,6 +140,8 @@
         document.getElementById('action').addEventListener("click", function() {
             document.querySelector(".popup").style.display = "flex";
         })
+        
+
         console.log(document.querySelector('.close'))
         document.querySelector('.close').addEventListener("click", function() {
             document.querySelector(".popup").style.display = "none";
@@ -149,10 +151,30 @@
     <script>
         // при открытии формы
         function fillProfile() {
-            // при открытии окна, берём данные из localStorage.getItem('MyData')
-            // заполняем этими данными форму
-        }
+            var dictionary=localStorage.getItem("MyData");
+            var data=JSON.parse(dictionary)
+            var element = document.getElementById('places');
+           
+            Object.keys(data).forEach(key => {
+                if(key==='places'){
+                    
+                    for (var i = 0; i < element.options.length; i++) {
+                    element.options[i].selected = data[key].indexOf(element.options[i].value) >= 0;} 
+                    }
 
+                else{    
+                document.getElementById(key).value=data[key];}
+                //console.log(key, data[key]);
+            });
+           
+
+            
+            
+        }
+        document.getElementById('action').addEventListener("click",fillProfile)
+
+
+        //Никита
         const categories = {
             museums: "Museums",
             bars: "Bars",
@@ -161,7 +183,6 @@
             theartes: "Theartes",
             night_clubs: "Night clubs",
         }
-
         function getPlaces() {
             // наполнить данные
             const data = [
