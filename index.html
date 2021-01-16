@@ -535,6 +535,9 @@
         <div id="map">
             
         </div>
+        <div>
+            <img src="./images/close_icon.png" alt="" class="close_second">
+        </div>
         
     </div>
     <script>
@@ -553,7 +556,11 @@
     <script>
 
       document.getElementById('btn').addEventListener("click",function() {
-        document.getElementById('map').style.visibility = "visible";
+        document.querySelector(".close_second").style.visibility = "visible";
+        })
+        document.querySelector('.close_second').addEventListener("click",function(){
+            document.querySelector(".close_second").style.visibility = "hidden";
+
         })
     </script>
 
