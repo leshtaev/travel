@@ -91,38 +91,38 @@
                     Get personal city tour now!
                     </p3>
                     <div class='direction'>
-                        <label for="fname">First name:</label>
+                        <label for="fname">First name</label>
                         <input type="text" id="fname" name="fname">
                     </div>
                     <div class="direction">
-                        <label for="city">City:</label>
+                        <label for="city">City</label>
                         <select name="city" id="city">
                             <option value="moscow">Moscow</option>
                         </select>
                     </div>
                     <div class="direction">
-                        <label for="age">Age:</label>
+                        <label for="age">Age</label>
                         <select name="age" id="age">
                             <option value="18-25">18-25</option>
                             <option value="25-35">25-35</option>
                             <option value="35-45">35-45</option>
                             <option value="45-60">45-60</option>
-                            <option value="60-100">60-100</option>
+                            <option value="60-100">60+</option>
                         </select>
                     </div>
                     <div class="direction">
-                        <label for="places">Places of interests:</label>
+                        <label for="places">Places of interests</label>
                         <select name="places" id="places" multiple>
                             <option value="Museums">Museums</option>
                             <option value="Bars">Bars</option>
-                            <option value="Restaraunts">Restaraunts</option>
+                            <option value="Restaraunts">Restaurants</option>
                             <option value="Parks">Parks</option>
-                            <option value="Theartes">Theartes</option>
+                            <option value="Theartes">Theatres</option>
                             <option value="Night clubs">Night clubs</option>
                         </select>
                     </div>
                     <div class="direction">
-                        <label for="budget">budget:</label>
+                        <label for="budget">budget</label>
                         <input type="number" id="number" name="number">
                     </div>
                     <div >
@@ -135,14 +135,14 @@
             </form>
         </div>
     </section>
+
     <script>
-        document.getElementById('action').addEventListener("click",function() {
+        document.getElementById('action').addEventListener("click", function() {
             document.querySelector(".popup").style.display = "flex";
         })
         console.log(document.querySelector('.close'))
-        document.querySelector('.close').addEventListener("click",function(){
-            document.querySelector(".popup").style.display="none";
-
+        document.querySelector('.close').addEventListener("click", function() {
+            document.querySelector(".popup").style.display = "none";
         })
     </script>
 
@@ -154,7 +154,12 @@
         }
 
         const categories = {
-            museums: 'Museums'
+            museums: "Museums",
+            bars: "Bars",
+            restaurants: "Restaurants",
+            parks: "Parks",
+            theartes: "Theartes",
+            night_clubs: "Night clubs",
         }
 
         function getPlaces() {
