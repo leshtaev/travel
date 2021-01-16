@@ -115,9 +115,9 @@
                         <select name="places" id="places" multiple>
                             <option value="Museums">Museums</option>
                             <option value="Bars">Bars</option>
-                            <option value="Restaraunts">Restaurants</option>
+                            <option value="Restaurants">Restaurants</option>
                             <option value="Parks">Parks</option>
-                            <option value="Theartes">Theatres</option>
+                            <option value="Theatres">Theatres</option>
                             <option value="Night clubs">Night clubs</option>
                         </select>
                     </div>
@@ -125,7 +125,7 @@
                         <label for="budget">budget</label>
                         <input type="number" id="number" name="number">
                     </div>
-                    <div >
+                    <div>
                         <button id='btn'>Get Trip</button>
                     </div>
                     <div id="msg">
@@ -135,104 +135,6 @@
             </form>
         </div>
     </section>
-
-    <script>
-        document.getElementById('action').addEventListener("click", function() {
-            document.querySelector(".popup").style.display = "flex";
-        })
-        
-
-        console.log(document.querySelector('.close'))
-        document.querySelector('.close').addEventListener("click", function() {
-            document.querySelector(".popup").style.display = "none";
-        })
-    </script>
-
-    <script>
-        // при открытии формы
-        function fillProfile() {
-            var dictionary=localStorage.getItem("MyData");
-            var data=JSON.parse(dictionary)
-            var element = document.getElementById('places');
-           
-            Object.keys(data).forEach(key => {
-                if(key==='places'){
-                    
-                    for (var i = 0; i < element.options.length; i++) {
-                    element.options[i].selected = data[key].indexOf(element.options[i].value) >= 0;} 
-                    }
-
-                else{    
-                document.getElementById(key).value=data[key];}
-                //console.log(key, data[key]);
-            });
-           
-
-            
-            
-        }
-        document.getElementById('action').addEventListener("click",fillProfile)
-
-
-        //Никита
-        const categories = {
-            museums: "Museums",
-            bars: "Bars",
-            restaurants: "Restaurants",
-            parks: "Parks",
-            theartes: "Theartes",
-            night_clubs: "Night clubs",
-        }
-        function getPlaces() {
-            // наполнить данные
-            const data = [
-                {
-                    name: 'Эрмитаж',
-                    image: 'photo.png',
-                    categories: ['sightsins', categories.museums],
-                    coordinates: [50, 60],
-                    price: 100
-                }
-            ]
-        }
-
-        function selectPlaces(userData) {
-            // профильтровать по категориям [].filter()
-            // заканчивается, когда заканчивается бюджет
-            // возвращаем 
-        }
-
-        const addUser = (ev) => {
-            ev.preventDefault();
-            const rowData = Array.from(new FormData(document.getElementById('profile')))
-            const data = {}
-
-            rowData.forEach((item) => {
-                const key = item[0]
-                const value = item[1]
-
-                if (key === 'places') {
-                    if (data[key] == null) {
-                        data[key] = [value]
-                    } else {
-                        data[key].push(value)
-                    }
-                } else {
-                    data[key] = item[1]
-                }
-            })
-
-            console.warn('added', data)
-         
-            localStorage.setItem('MyData', JSON.stringify(data))
-        }
-        
-        document.addEventListener('DOMContentLoaded', () => { 
-            document.getElementById('btn').addEventListener('click', addUser);
-        });
-       
-
-    </script>
     
     <section class="about">
         <div class="container flex-container">
@@ -530,5 +432,7 @@
             <span class="accent">Shah Zobayer Ahmed</span>
         </div>
     </div>
+
+    <script type="module" src="./js/main.js"></script>
 </body>
 </html>
