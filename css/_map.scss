@@ -1,0 +1,25 @@
+@import 'variables';
+
+.mapbox{
+    
+    #map{
+      position: absolute; 
+      top: 0; 
+      bottom: 0; 
+      width: 100%;
+      visibility: hidden;
+      
+      
+    }
+    .close-second{
+      position: absolute;
+      top: -10px;
+      right: -60px;
+      height: 40px;
+      width: 20px;
+      background-color: green;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      }
+}
