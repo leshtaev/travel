@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
-    
     <title>Travel</title>
     <link 
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700&family=Roboto:wght@300;500;700;900&display=swap" 
@@ -19,6 +18,7 @@
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.css" rel="stylesheet" />
 </head>
 <body>
+
     <header>
         <div class="container flex-container">
             <div class="contacts">
@@ -48,7 +48,6 @@
                 <span class="span_l color ">N</span>
                 <span class="span_l">T</span>
             </div>
-
             <nav class="flex-container">
                 <a href="" class="nav-link">Home</a>
                 <a href="" class="nav-link">About us</a>
@@ -355,6 +354,7 @@
             <i class="far fa-play-circle"></i>
         </label>
     </section>
+    
     <section class="blog">
         <div class="container flex-container">
             <div class="heading flex-container">
@@ -392,9 +392,7 @@
         </div>
     </section>
 
-    <section class="auth">
-
-    </section>
+    <section class="auth"></section>
 
     <footer class="contacts">
         <div class="container grid-container">
@@ -439,8 +437,7 @@
     </div>
 
     <div class='mapbox'>
-        <div id="map">            
-        </div>
+        <div id="map"></div>
         <div>
             <img src="./images/close_icon.png" alt="" class="close_second">
         </div>    
@@ -450,10 +447,10 @@
     <script>
         mapboxgl.accessToken = 'pk.eyJ1IjoiZGltYWRvYnIiLCJhIjoiY2tqenN3MnF2MGFyejJvbW5sMWdqaDlzNSJ9.zPzzW8fvyAs_xMkEgWTSfw';
         var map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v11',
-        center: [12.550343, 55.665957],
-        zoom: 10
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [12.550343, 55.665957],
+            zoom: 10
         });
      
         var marker = new mapboxgl.Marker()
@@ -461,8 +458,8 @@
         .addTo(map);
     </script>
     <script>
-      document.getElementById('btn').addEventListener("click", function() {
-        document.querySelector(".close_second").style.visibility = "visible";
+        document.getElementById('btn').addEventListener("click", function() {
+            document.querySelector(".close_second").style.visibility = "visible";
         })
         document.querySelector('.close_second').addEventListener("click", function() {
             document.querySelector(".close_second").style.visibility = "hidden";
