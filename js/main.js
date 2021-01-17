@@ -17,7 +17,6 @@ var map = new mapboxgl.Map({
     center: [30.315868, 59.939095],
     zoom: 10
 });
-// var marker = new mapboxgl.Marker().setLngLat([30, 60]).addTo(map);
 
 function fillMap(places) {
     places.forEach((place) => {
@@ -40,9 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// document.getElementById('btn').addEventListener("click", function() {
-//     document.querySelector(".close_second").style.visibility = "visible";
-// })
 document.querySelector('.close_second').addEventListener("click", function() {
     document.querySelector(".close_second").style.visibility = "hidden";
 })
