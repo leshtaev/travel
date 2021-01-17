@@ -1,4 +1,3 @@
-import {categories, getPlaces} from "./config.js"
 import {fillProfile, addUser, selectPlaces} from "./form.js"
 
 
@@ -10,8 +9,11 @@ document.querySelector('.close').addEventListener("click", function() {
     document.querySelector(".popup").style.display = "none";
 })
 
-// profile data adding
+// profile data filling
 document.getElementById('action').addEventListener("click", fillProfile)
 document.addEventListener('DOMContentLoaded', () => { 
-    document.getElementById('btn').addEventListener('click', addUser);
+    document.getElementById('btn').addEventListener('click', (ev) => {
+        addUser(ev);
+        selectPlaces(JSON.parse(localStorage.getItem("MyData")))
+    });
 });

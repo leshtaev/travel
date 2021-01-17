@@ -1,3 +1,5 @@
+import { categories, places } from "./config.js";
+
 export function fillProfile() {
     var dictionary = localStorage.getItem("MyData");
     var data = JSON.parse(dictionary)
@@ -10,11 +12,11 @@ export function fillProfile() {
         else {    
             document.getElementById(key).value = data[key];
         }
-        console.log(key, data[key]);
+        // console.log(key, data[key]);
     });
 }
 
-export const addUser = (ev) => {
+export function addUser(ev) {
     ev.preventDefault();
     const rowData = Array.from(new FormData(document.getElementById('profile')))
     const data = {}
@@ -36,7 +38,24 @@ export const addUser = (ev) => {
 }
 
 export function selectPlaces(userData) {
-    // профильтровать по категориям [].filter()
-    // заканчивается, когда заканчивается бюджет
-    // возвращаем 
+    const budget = userData["number"]
+    var appropriatePlaces = []
+    // отбираем места, для категорий которых пересечение с пользовательскими категориями не пустое 
+    places.forEach(place => {
+        if (place["categories"].filter(place_category => userData["places"].includes(place_category)).length > 0) {
+            appropriatePlaces.push(place)
+        }
+    })
+    console.log(appropriatePlaces)
+    // жадный алгоритм: строим маршрут из первых мест, прошедших по бюджету, без ограничений по дублированию категории  
+    var selectedPlaces = []
+    var curSpendings = 0
+    appropriatePlaces.forEach(place => {
+        if (place["price"] <= budget - curSpendings) {
+            selectedPlaces.push(place);
+            curSpendings = curSpendings + place["price"]
+        }
+    })
+    console.log(selectedPlaces)
+    return selectedPlaces
 }
