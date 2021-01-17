@@ -17,3 +17,20 @@ document.addEventListener('DOMContentLoaded', () => {
         selectPlaces(JSON.parse(localStorage.getItem("MyData")))
     });
 });
+
+// map
+mapboxgl.accessToken = 'pk.eyJ1IjoiZGltYWRvYnIiLCJhIjoiY2tqenN3MnF2MGFyejJvbW5sMWdqaDlzNSJ9.zPzzW8fvyAs_xMkEgWTSfw';
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11',
+    center: [59.939095, 30.315868],
+    zoom: 10
+});
+var marker = new mapboxgl.Marker().setLngLat([12.550343, 55.665957]).addTo(map);
+
+document.getElementById('btn').addEventListener("click", function() {
+    document.querySelector(".close_second").style.visibility = "visible";
+})
+document.querySelector('.close_second').addEventListener("click", function() {
+    document.querySelector(".close_second").style.visibility = "hidden";
+})

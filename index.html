@@ -444,27 +444,6 @@
     </div>
 
     <script type="module" src="./js/main.js"></script>
-    <script>
-        mapboxgl.accessToken = 'pk.eyJ1IjoiZGltYWRvYnIiLCJhIjoiY2tqenN3MnF2MGFyejJvbW5sMWdqaDlzNSJ9.zPzzW8fvyAs_xMkEgWTSfw';
-        var map = new mapboxgl.Map({
-            container: 'map',
-            style: 'mapbox://styles/mapbox/streets-v11',
-            center: [12.550343, 55.665957],
-            zoom: 10
-        });
-     
-        var marker = new mapboxgl.Marker()
-        .setLngLat([12.550343, 55.665957])
-        .addTo(map);
-    </script>
-    <script>
-        document.getElementById('btn').addEventListener("click", function() {
-            document.querySelector(".close_second").style.visibility = "visible";
-        })
-        document.querySelector('.close_second').addEventListener("click", function() {
-            document.querySelector(".close_second").style.visibility = "hidden";
-        })
-    </script>
 
 </body>
 </html>
