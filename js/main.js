@@ -18,6 +18,7 @@ var map = new mapboxgl.Map({
     zoom: 12
 });
 
+// сохранить места в массив, удалять их с карты при повторном вызове функции
 function fillMap(places) {
     places.forEach((place) => {
         new mapboxgl.Marker().setLngLat(place["coordinates"].slice().reverse()).addTo(map);
@@ -25,7 +26,7 @@ function fillMap(places) {
 }
 
 function openMap() {
-    document.getElementById('map').style.visibility = "visible";
+    document.getElementById('mapbox').style.visibility = "visible";
     //document.querySelector(".mapbox").style.visibility = "visible";
      document.querySelector(".close_second").style.visibility = "visible"
 }
