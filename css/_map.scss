@@ -1,6 +1,9 @@
 @import 'variables';
 
 .mapbox {
+    
+  
+  #map {
     position: absolute; 
     top: 12.5%; 
     bottom: 0; 
@@ -9,20 +12,16 @@
     left: 12.5%;
     right: 12.5%;  
     visibility: hidden;
-  
-  #map {
-   width: 100%;
-   height: 100%;
   }
 
-  #legend {
-    background-color: red;
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
+  //#legend {
+  //  background-color: grey;
+  //  width: 100px;
+  //  height: 100px;
+  //  position: absolute;
+  //  left: 0;
+  //  top: 0;
+  //}
   .close_second{
     position: absolute;
     top: 0;

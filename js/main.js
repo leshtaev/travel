@@ -26,7 +26,7 @@ function fillMap(places) {
 }
 
 function openMap() {
-    document.getElementById('mapbox').style.visibility = "visible";
+    document.getElementById('map').style.visibility = "visible";
     //document.querySelector(".mapbox").style.visibility = "visible";
      document.querySelector(".close_second").style.visibility = "visible"
 }

@@ -662,7 +662,7 @@ footer .container {
   padding-top: 64px;
   padding-bottom: 60px;
   gap: 20px 32px;
-      grid-template-areas: "heading1 heading2" "content1 content2" "content1 social-links";
+      grid-template-areas: "heading1 heading2" "content1 content2" "content1 social-links";
   -ms-grid-rows: 35px 1fr 44px;
       grid-template-rows: 35px 1fr 44px;
   -ms-grid-columns: 1fr 1fr;
@@ -863,15 +863,6 @@ footer .i-container:hover a {
 .mapbox #map {
   width: 100%;
   height: 100%;
-}
-
-.mapbox #legend {
-  background-color: red;
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  left: 0;
-  top: 0;
 }
 
 .mapbox .close_second {
