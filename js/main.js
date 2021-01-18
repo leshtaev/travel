@@ -15,7 +15,7 @@ var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v11',
     center: [30.315868, 59.939095],
-    zoom: 10
+    zoom: 12
 });
 
 function fillMap(places) {
@@ -26,7 +26,8 @@ function fillMap(places) {
 
 function openMap() {
     document.getElementById('map').style.visibility = "visible";
-    document.querySelector(".close_second").style.visibility = "visible"
+    //document.querySelector(".mapbox").style.visibility = "visible";
+     document.querySelector(".close_second").style.visibility = "visible"
 }
 
 // profile data filling and map opening
@@ -41,4 +42,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.querySelector('.close_second').addEventListener("click", function() {
     document.querySelector(".close_second").style.visibility = "hidden";
+    document.getElementById("map").style.visibility = "hidden";
 })

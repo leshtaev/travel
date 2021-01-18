@@ -851,23 +851,27 @@ footer .i-container:hover a {
 
 .mapbox #map {
   position: absolute;
-  top: 0;
+  top: 12.5%;
   bottom: 0;
-  width: 100%;
+  width: 75%;
+  height: 75%;
+  left: 12.5%;
+  right: 12.5%;
   visibility: hidden;
 }
 
-.mapbox .close-second {
+.mapbox .close_second {
   position: absolute;
-  top: -10px;
-  right: -60px;
-  height: 40px;
+  top: 120px;
+  right: 175px;
+  height: 20px;
   width: 20px;
-  background-color: green;
+  background-color: white;
   border-radius: 50%;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  visibility: hidden;
 }
 /*# sourceMappingURL=main_page.css.map */
