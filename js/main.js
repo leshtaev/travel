@@ -1,6 +1,22 @@
 import {fillProfile, addUser, selectPlaces} from "./form.js"
 
 
+function fillMap(places) {
+    places.forEach((place) => {
+        var mapMarker = new mapboxgl.Marker()
+            .setLngLat(place["coordinates"].slice().reverse())
+            .addTo(map);
+        mapMarkers.push(mapMarker);
+    })
+}
+
+function openMap() {
+    document.getElementById('map').style.visibility = "visible";
+    //document.querySelector(".mapbox").style.visibility = "visible";
+     document.querySelector(".close_second").style.visibility = "visible"
+}
+
+
 // form opening and closing
 document.getElementById('action').addEventListener("click", function() {
     document.querySelector(".popup").style.display = "flex";
@@ -17,19 +33,7 @@ var map = new mapboxgl.Map({
     center: [30.315868, 59.939095],
     zoom: 12
 });
-
-// сохранить места в массив, удалять их с карты при повторном вызове функции
-function fillMap(places) {
-    places.forEach((place) => {
-        new mapboxgl.Marker().setLngLat(place["coordinates"].slice().reverse()).addTo(map);
-    })
-}
-
-function openMap() {
-    document.getElementById('map').style.visibility = "visible";
-    //document.querySelector(".mapbox").style.visibility = "visible";
-     document.querySelector(".close_second").style.visibility = "visible"
-}
+var mapMarkers = [];
 
 // profile data filling and map opening
 document.getElementById('action').addEventListener("click", fillProfile)
@@ -41,7 +45,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// map closing
 document.querySelector('.close_second').addEventListener("click", function() {
     document.querySelector(".close_second").style.visibility = "hidden";
     document.getElementById("map").style.visibility = "hidden";
+    if (mapMarkers !== null) {
+        for (var i = mapMarkers.length - 1; i >= 0; i--) {
+          mapMarkers[i].remove();
+        }
+    };
 })
