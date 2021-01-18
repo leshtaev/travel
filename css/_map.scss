@@ -1,0 +1,37 @@
+@import 'variables';
+
+.mapbox {
+    
+  
+  #map {
+    position: absolute; 
+    top: 12.5%; 
+    bottom: 0; 
+    width: 75%;
+    height: 75%;
+    left: 12.5%;
+    right: 12.5%;  
+    visibility: hidden;
+  }
+
+  //#legend {
+  //  background-color: grey;
+  //  width: 100px;
+  //  height: 100px;
+  //  position: absolute;
+  //  left: 0;
+  //  top: 0;
+  //}
+  .close_second{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    visibility: hidden;
+  }
+}
