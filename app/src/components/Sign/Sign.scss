@@ -1,0 +1,21 @@
+@import '../../common-styles/variables';
+
+
+.sign {
+    height: 80px;
+    background-color: black;
+        
+    .container {
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        font-family: $secondary-font-family;
+        font-size: 16px;
+        color: $header-footer-font-color;
+
+        .accent {
+            color: $accent-color;
+            margin-left: 0.5em;
+        }
+    }
+}

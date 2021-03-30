@@ -1,0 +1,79 @@
+@import '../../common-styles/variables';
+
+
+.routes {
+    height: 700px;
+    background: no-repeat bottom/100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../../images/routes_background.JPG);
+    
+    .container {
+        height: 100%;
+        font-family: $main-font-family;
+        padding: 0;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .heading .title {
+        color: $main-background-color;
+    }
+
+    .routes-container {
+        height: 380px;
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
+
+    .route {
+        height: 100%;
+        width: 350px;
+        background-color: $main-background-color;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    img {
+        height: 277px;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        position: relative;
+        top: 0;
+    }
+
+    .route-info {
+        height: 103px;
+        width: 100%;
+        padding: 16px;
+        flex-direction: column;
+        justify-content: space-between;
+        text-transform: uppercase;
+    }
+
+    .route-name {
+        font-family: $secondary-font-family;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 16px;
+        color: $content-color;
+        text-align: left;
+    }
+
+    .route-desc .action {
+        height: 55px;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        color: $accent-color;
+        border-color: $accent-color;
+    }
+
+    .route-desc .action a {
+        color: $accent-color;
+        border-color: $accent-color;
+
+        &:hover {
+            color: $main-background-color;
+        }
+    }
+}
