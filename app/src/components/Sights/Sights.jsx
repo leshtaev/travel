@@ -1,5 +1,12 @@
 import './Sights.scss';
-
+import imgBerlin from '../../images/Berlin.jpeg';
+import imgKiev from '../../images/Kiev.jpg';
+import imgMoscow from '../../images/moscow.jpg';
+import imgIstanbul from '../../images/Istanbul.jpg';
+import imgPrague from '../../images/Prague.jpg';
+import imgTokyo from '../../images/Tokyo.jpeg';
+import imgParis from '../../images/Paris.jpeg';
+import imgNY from '../../images/new_york.jpg';
 
 function Sights() {
     return (
@@ -35,7 +42,7 @@ function Sights() {
                 </div>
                 <div className="sights-container grid-container">
                     <div className='case-item'>
-                        <img src= "../../images/Berlin.jpeg" alt=""/>
+                        <img src={imgBerlin} alt=""/>
                         <div className="case-inner ">
                             <div className= "case-inner-content">
                             Berlin day tour
@@ -43,7 +50,7 @@ function Sights() {
                         </div>
                     </div>
                     <div className='case-item'>
-                        <img src= "../../images/Kiev.jpg" alt=""/>
+                        <img src={imgKiev} alt=""/>
                         <div className="case-inner ">
                             <div className= "case-inner-content">
                                 Kiev day tour
@@ -51,7 +58,7 @@ function Sights() {
                         </div>
                     </div>
                     <div className='case-item'>
-                        <img src= "../../images/moscow.jpg" alt=""/>
+                        <img src={imgMoscow} alt=""/>
                         <div className="case-inner ">
                             <div className= "case-inner-content">
                                 Moscow day tour
@@ -59,7 +66,7 @@ function Sights() {
                         </div>
                     </div>
                     <div className='case-item'>
-                        <img src= "../../images/Istanbul.jpg" alt=""/>
+                        <img src={imgIstanbul} alt=""/>
                         <div className="case-inner ">
                             <div className= "case-inner-content">
                                 Istanbul day tour
@@ -67,7 +74,7 @@ function Sights() {
                         </div>
                     </div>
                     <div className='case-item'>
-                        <img src= "../../images/Prague.jpg" alt=""/>
+                        <img src={imgPrague} alt=""/>
                         <div className="case-inner ">
                             <div className= "case-inner-content">
                                 Prague day tour
@@ -75,7 +82,7 @@ function Sights() {
                         </div>
                     </div>
                     <div className='case-item'>
-                        <img src= "../../images/Tokyo.jpeg" alt=""/>
+                        <img src={imgTokyo} alt=""/>
                         <div className="case-inner ">
                             <div className= "case-inner-content">
                                 Tokyo day tour
@@ -83,7 +90,7 @@ function Sights() {
                         </div>
                     </div>
                     <div className='case-item'>
-                        <img src= "../../images/Paris.jpeg" alt=""/>
+                        <img src={imgParis} alt=""/>
                         <div className="case-inner ">
                             <div className= "case-inner-content">
                                 Paris day tour
@@ -91,7 +98,7 @@ function Sights() {
                         </div>
                     </div>
                     <div className='case-item'>
-                        <img src= "../../images/new_york.jpg" alt=""/>
+                        <img src={imgNY} alt=""/>
                         <div className="case-inner ">
                             <div className= "case-inner-content">
                                 New York day tour
