@@ -1,4 +1,5 @@
 import './About.scss';
+import 'font-awesome/css/font-awesome.min.css'; 
 
 function About() {
     return (
